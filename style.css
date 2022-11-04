@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  src: local("Montserrat"), url("./assets/fonts/Montserrat-Light.woff") format("woff");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Montserrat"), url("./assets/fonts/Montserrat-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Montserrat"), url("./assets/fonts/Montserrat-Bold.ttf") format("woff");
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  background-image: url("./assets/image/bg-img.jpg");
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  color: bisque;
+  flex-wrap: wrap;
+}
+
+.key {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  transition: 0.5s;
+  color: #55e7fc;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow:0 0 8px 3px rgba(256, 256, 256, 0.5);
+  user-select: none;
+}
+.key:hover {
+  cursor: url("./assets/icon/cursor.svg") 18 18, auto;
+}
+
+.key1 {
+  filter: hue-rotate(115deg);
+}
+
+.key3 {
+  filter: hue-rotate(200deg);
+}
+
+.key4 {
+  filter: hue-rotate(270deg);
+}
+
+.key5 {
+  filter: hue-rotate(234deg);
+}
+
+.key6 {
+  filter: hue-rotate(45deg);
+}
+
+.key7 {
+  filter: hue-rotate(328deg);
+}
+
+.key8 {
+  filter: hue-rotate(133deg);
+}
+
+.key9 {
+  filter: hue-rotate(244deg);
+}
+
+kbd {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.key--active {
+  background: #55e7fc;
+  color: #111111;
+  box-shadow: 0 0 50px #55e7fc;
+}
